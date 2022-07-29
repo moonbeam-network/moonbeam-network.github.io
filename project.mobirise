@@ -1,0 +1,160 @@
+{
+  "settings": {
+    "name": "Moonbeam Network",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "mobirise5",
+      "title": "Mobirise 5",
+      "styling": {
+        "primaryColor": "#6592e6",
+        "secondaryColor": "#ff6666",
+        "successColor": "#40b0bf",
+        "infoColor": "#47b5ed",
+        "warningColor": "#FFE161",
+        "dangerColor": "#ff9966",
+        "mainFont": "Jost",
+        "display1Font": "Jost",
+        "display1Size": 4.6,
+        "display2Font": "Jost",
+        "display2Size": 3,
+        "display5Font": "Jost",
+        "display5Size": 2,
+        "display7Font": "Jost",
+        "display7Size": 1.2,
+        "display4Font": "Jost",
+        "display4Size": 1.1,
+        "isRoundedButtons": false,
+        "isGhostButtonBorder": false,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": [
+        "#0e1025"
+      ]
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.6.11",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/moonbeam.png",
+    "mbrsiteDomain": "kccfdtytw6",
+    "imageResize": false,
+    "robotsSwitcher": false,
+    "sitemapSwitcher": false,
+    "sitemapSwitcherAuto": false,
+    "siteUrl": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.6.11"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Moonbeam | Polkadot Smart Contract Platform.",
+        "meta_descr": "Moonbeam is much more than just an EVM implementation: it’s a highly specialized Layer 1 chain that mirrors Ethereum’s Web3 RPC, accounts, keys, logs, and more.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            "@media (max-width: 991px)": {
+              ".image-wrapper": {
+                "margin-bottom": "1rem"
+              }
+            },
+            ".row": {
+              "flex-direction": "row-reverse"
+            },
+            "img": {
+              "width": "100%"
+            }
+          },
+          "_name": "image3",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image3\" group=\"Images & Videos\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"range\" name=\"textWidth\" title=\"Image\" min=\"4\" max=\"12\" step=\"1\" value=\"12\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#0e1025\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-12 col-lg-{{textWidth}}\">\n                <div class=\"image-wrapper\">\n                    <img src=\"@PROJECT_PATH@/assets/images/moonbeam-network.png\" alt=\"Moonbeam\">\n                    <p class=\"mbr-description mbr-fonts-style mt-2 align-center\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-description\">\n                        Image Description</p>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "tcXgXAwJom",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image3-0"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#ffffff"
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#ffffff"
+            }
+          },
+          "_name": "header2",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header2\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n\n        <input type=\"range\" inline name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"12\" step=\"1\">\n        <select title=\"Align\" name=\"contentAlign\">\n            <option value selected>Left</option>\n            <option value=\"justify-content-center\">Center</option>\n            <option value=\"justify-content-end\">Right</option>\n        </select>\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubitle\">\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background7.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#0e1025\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row {{contentAlign}}\">\n            <div class=\"col-12 col-lg-{{textWidth}}\">\n                <h1 class=\"mbr-section-title mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\"><a href=\"https://moonbeam-network.github.io/\" class=\"text-primary\">Moonbeam</a> | Polkadot Smart Contract Platform.</h1>\n                <h2 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-2\" mbr-if=\"showSubitle\">Header Subtitle</h2>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">The Next Generation of Unified DeFi Applications has arrived\n<br>\n<br><a href=\"https://moonbeam-network.github.io/\" class=\"text-primary\">Moonbeam Network</a> sent off in January 2022 and immediately turned into a top objective for multi-chain uses, everything being equal. Presently, having finished the underlying bootstrapping that brought key framework and apparatuses on the web, Moonbeam has entered the following period of its send off: Harvest Moon.\n<br>\n<br>Gather Moon is a mission intended to start DeFi movement and draw in the following rush of cross-chain associated applications — those unconfined by the limitations of their starting point bind — to come construct the eventual fate of DeFi on Moonbeam. It's a development of the potential outcomes in DeFi, fueled by Moonbeam's extraordinary cross-chain associated brilliant agreements.\n<br>About Harvest Moon\n<br>\n<br>The <a href=\"https://moonbeam-network.github.io/\" class=\"text-primary\">Moonbeam Foundation</a> has demonstrated that it has dispensed up to 1.5% of the GLMR beginning stockpile to subsidize an award based liquidity program for the Harvest Moon crusade.\n<br>\n<br>Moonbeam has previously drawn in DeFi forces to be reckoned with like Lido and Curve to the organization, notwithstanding its own blossoming environment of local conventions like AMM StellaSwap and loaning and getting convention Moonwell.\n<br>\n<br>In its most memorable wave, Harvest Moon is intended to help these point of support applications send off and develop. As the following rush of ventures convey, especially those that are utilizing Moonbeam's cross-anchor informing capacities to rethink what DeFi applications can do, Harvest Moon will be extended to permit clients to saddle these new use cases.\n<br>\n<br>Reap Moon will run for around three to four months and will zero in on building the center DeFi natives required for the multi-chain associated brilliant agreement vision to show some signs of life. How much tokens distributed to the Harvest Moon and the length of the mission are dependent on future developments.\n<br>DeFi Building Blocks: Tools to Help Ensure Security and Reliability\n<br>\n<br>Presently, with the new send off of Chainlink prophets, Moonbeam has the significant combinations set up to give the monetary security required by driving DeFi DApps. This update follows a long time of working, during which practically every significant instrument and joining has sent off on Moonbeam.\n<br>\n<br>Prophets: Chainlink\n<br>APIs and Indexers: The Graph, Covalent, SubQuery, Subsquid\n<br>Wallets: MetaMask, Ledger\n<br>Multisig: Gnosis Safe\n<br>Authority Provider: Fireblocks\n<br>Travelers: Etherscan, Subscan\n<br>Dev Tools: Hardhat, Scaffold.eth, OpenZeppelin, Gelato, Remix, Mars, Waffle, Truffle\n<br>RPC Providers: Blast, OnFinality, Pinata (for NFTs)\n<br>VRF (irregularity capability): API3, WitNet\n<br>\n<br>This rundown is for illustrative purposes. For a full rundown of mixes, allude to project posting locales like Downtown Moonbeam.\n<br>\n<br>The mix of these top tier instruments — the main prophets, indexers, voyagers, layer twos, and that's only the tip of the iceberg — with the cross-chain informing capacities of Moonbeam, DeFi designers can construct new sorts of applications that range resources and usefulness from many chains.\n<br>Cross-Chain Connected DeFi Apps on Moonbeam\n<br>\n<br><a href=\"https://moonbeam-network.github.io/\" class=\"text-primary\">Moonbeam</a> is situated at the focal point of the multi-chain development, prepared to introduce the following advancement of DeFi applications fit for taking advantage of liquidity and assets across any current blockchain with a solitary application.\n<br>\n<br>The Moonbeam Network stage has been intended to help cross-chain situations, empowering applications based on it to cooperate with any remote chain through secure messages. By eliminating the limitations intrinsic in performance chain improvement, Moonbeam turns into an organization point for collected markets, liquidity, and clients — permitting advancement groups to build DApps that range various blockchains with a solitary arrangement of shrewd agreements.\n<br>\n<br>Utilizing Polkadot's inherent cross-chain capacities, Moonbeam as of now offers secure informing associations with the Polkadot Relay Chain in addition to parachains like Acala and Statemint. This permits Substrate-based resources from inside the Polkadot biological system, similar to DOT, to be kept and utilized in Moonbeam-based DeFi applications without need of the customary symbolic exchange span.\n<br>\n<br>In any case, these cooperations inside Polkadot are just the start: applications that influence informing associations with Ethereum, Cosmos, and different biological systems are now underway, utilizing coordinated conventions like Axelar and Nomad. These innovations permit designers to work with distant resources as a feature of a solitary application. Moonbeam offers an expansive scope of secure informing associations with an assortment of objective blockchains to best help designers making cross-chain use cases.\n<br>\n<br>As a feature of this development, Moonbeam goes about as a connector and interpreter, offering designer centered help and similarity that joins the numerous principles of these chains under one shrewd agreement stage. This incorporates total Ethereum similarity, yet in addition advancements like the XC-20 norm, which empowers clients to \"store\" tokens from somewhere else in the Polkadot biological system to be utilized in Moonbeam-based applications as well as the other way around.\n<br>Driving DeFi Projects on Moonbeam\n<br>\n<br>Many DeFi projects have proactively sent to Moonbeam shrewd agreement stage going from deeply grounded multi-fasten DeFi applications to new and promising local tasks.\n<br>\n<br>The accompanying DApps are driving DeFi projects in Moonbeam's Harvest Moon crusade that are fundamental to launching the following rush of DApps driven by interoperability, including bringing Polkadot based resources as XC-20s into their DeFi conventions. For instance, you can figure out how to bring your DOT into Moonbeam or scaffold over new tokens.\n<br>AMMs and DEXes\n<br>\n<br>StellaSwap is an illustration of a decentralized trade on Moonbeam that empowers distributed exchanges supporting local resources. StellaSwap is local to Moonbeam.\n<br>\n<br>Bend is a decentralized liquidity pool and offers stablepools including, for instance, one that upholds xcDOT/stDOT.\n<br>Loaning/Borrowing\n<br>\n<br>Moonwell is a loaning and getting convention based on Moonbeam with accessible applications for xcDOT and other local resources.\n<br>Fluid Staking\n<br>\n<br>Lido is an undertaking on <a href=\"https://moonbeam-network.github.io/\" class=\"text-primary\">Moonbeam </a>that offers a fluid marking answer for DOT (xcDOT). As the biggest fluid marking convention, clients approach new use cases for their Polkadot tokens on Moonbeam.\n<br>Assist with building a New Era of DeFi\n<br>\n<br>Over the long run and as extra DeFi conventions send off on Moonbeam, there might be new tasks that join the above rundown of members to turn out to be important for the Harvest Moon crusade. To invigorate the improvement of new DeFi projects, the Moonbeam Foundation presented a new $100 Million Ecosystem Fund, co-made by Arrington Capital and devoted to subsidizing groups expanding on Moonbeam's expansively interoperable stage. These assets, as well as awards offered straight by the Moonbeam Foundation, fuel groups with extraordinary thoughts and basics.\n<br>\n<br>If it's not too much trouble, note that data connected with claims, content, plans, calculations, evaluations and guidelines in this blog entry are accommodated enlightening purposes just and nothing in this blog ought to comprise a sales for venture. Besides, certain data contained in this blog hosts been given by third gatherings or in any case reference outsider items and administrations and is made accessible exclusively for general educational purposes and doesn't comprise a support of any outsider item or administration.</p>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn mt-3\" mbr-if=\"showButtons\">\n                    <a class=\"btn btn-success\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Free Download!</a>\n                    <a class=\"btn btn-success-outline\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Live Demos &gt;</a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "tcXgYoCg0K",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "header2-1"
+        }
+      ]
+    }
+  }
+}
